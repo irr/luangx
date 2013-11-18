@@ -101,7 +101,7 @@ kill `cat logs/nginx.pid `
 EOF
     close FILE;
 
-    chmod 0755, "$root/start-nginx.sh", "$root/stop-nginx.sh"
+    chmod 0755, "$root", "$root/start-nginx.sh", "$root/stop-nginx.sh"
             or die "chmod failed: $!";
 }
 
